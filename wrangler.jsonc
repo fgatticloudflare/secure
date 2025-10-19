@@ -9,7 +9,19 @@
 	"compatibility_date": "2025-10-11",
 	"observability": {
 		"enabled": true
-	}
+	},
+	"routes": [
+		{
+			"pattern": "tunnel.gattihome.com/secure*",
+			"zone_name": "gattihome.com"
+		}
+	],
+	"r2_buckets": [
+		{
+			"binding": "flags",
+			"bucket_name": "flags"
+		}
+	]
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
